@@ -1,0 +1,36 @@
+{
+  "houses": [
+    {
+      "image_path": "graphics/background/house1.png",
+      "pos": [100, 235],
+      "size": [120, 120],
+      "speed": 2
+    },
+    {
+      "image_path": "graphics/background/house3.png",
+      "pos": [300, 270],
+      "size": [100, 100],
+      "speed": 2
+    },
+    {
+      "image_path": "graphics/background/house2.png",
+      "pos": [550, 225],
+      "size": [150, 150],
+      "speed": 2
+    },
+    {
+      "image_path": "graphics/background/house3.png",
+      "pos": [800, 270],
+      "size": [100, 100],
+      "speed": 2
+    }
+  ],
+  "sky": {
+    "image_path": "graphics/sky.jpeg",
+    "size": [735, 440]
+  },
+  "ground": {
+    "image_path": "graphics/ground.png",
+    "size": [735, 111]
+  }
+}

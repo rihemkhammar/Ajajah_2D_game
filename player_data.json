@@ -1,0 +1,11 @@
+{
+  "walk_paths": [
+    "graphics/player/player_walk_1.png",
+    "graphics/player/player_walk_3.png"
+  ],
+  "jump_path": "graphics/player/jump.png",
+  "stand_path": "graphics/player/player_stand.png",
+  "size": [100, 100],
+  "start_pos": [80, 240]
+
+}

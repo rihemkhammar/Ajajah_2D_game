@@ -1,0 +1,18 @@
+{
+  "fly": {
+    "paths": ["graphics/Fly/Fly1.png", "graphics/Fly/Fly2.png"],
+    "size": [70, 40],
+    "y": 200
+  },
+  "snail": {
+    "paths": ["graphics/snail/snail1.png", "graphics/snail/snail2.png"],
+    "size": [40, 40],
+    "y": 329
+  },
+  "bunny": {
+    "paths": ["graphics/bunny/bunny1.png", "graphics/bunny/bunny2.png",
+              "graphics/bunny/bunny3.png", "graphics/bunny/bunny4.png"],
+    "size": [60, 60],
+    "y": 330
+  }
+}
