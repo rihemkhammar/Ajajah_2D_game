@@ -6,6 +6,7 @@
   "jump_path": "graphics/player/jump.png",
   "stand_path": "graphics/player/player_stand.png",
   "size": [100, 100],
-  "start_pos": [80, 240]
+  "start_pos": [80, 240],
+  "jump_audio": "audio/jump.mp3"
 
 }

@@ -62,17 +62,19 @@ def main():
     test_font = pygame.font.Font('font/Super Crawler.ttf', 40)
     test_font1 = pygame.font.Font('font/Pixel-Regular.ttf', 40)
 
+
     game_active = False
     start_time = 0
     score = 0
-
     # --- Groups ---
     player_group = pygame.sprite.GroupSingle()
     player_group.add(Player(
         walk_paths=PLAYER_DATA['walk_paths'],
         jump_path=PLAYER_DATA['jump_path'],
+        audio_path=PLAYER_DATA['jump_audio'],
         size=PLAYER_DATA['size'],
         pos=PLAYER_DATA['start_pos']
+
     ))
 
     obstacle_group = pygame.sprite.Group()

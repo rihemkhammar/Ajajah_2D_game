@@ -1,23 +1,25 @@
 import pygame
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, walk_paths, jump_path, size=(100, 100), pos=(80, 240)):
+    def __init__(self, walk_paths, jump_path, audio_path, size=(100, 100), pos=(80, 240)):
         super().__init__()
         self.walk_paths = walk_paths
         self.jump_path = jump_path
         self.player_walk = [pygame.transform.scale(pygame.image.load(path).convert_alpha(), size) for path in
                             walk_paths]
         self.player_jump = pygame.transform.scale(pygame.image.load(jump_path).convert_alpha(), size)
-
         self.player_index = 0
         self.image = self.player_walk[self.player_index]
         self.rect = self.image.get_rect(midbottom=pos)
         self.gravity = 0
+        self.jump_sound = pygame.mixer.Sound(audio_path)
+        self.jump_sound.set_volume(0.4)
 
     def player_input(self):
          keys = pygame.key.get_pressed()
          if keys[pygame.K_SPACE] and self.rect.bottom >=300:
               self.gravity = -22
+              self.jump_sound.play()
 
     def apply_gravity(self):
          self.gravity +=1
